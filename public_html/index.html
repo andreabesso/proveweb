@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>La mia pagina delle prove</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body onload="init()">
+        <header>
+            <h1>Login</h1>
+        </header>
+        <div id="divlog">
+        <form id="f_login" >
+            <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome"/>
+            <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" />
+            <input type="button" id="blogin" value="Login" onclick="visualizza('visible')"/>
+        </form>
+        </div>    
+        <div id="msg"></div>
+        <div id="visible" style="display: none">
+            <h3>Esercizio JavaScript 1: Lampadina</h3>
+            <img id="lamp" src="img/pic_bulboff.gif" width="100" height="180" style="padding-left:100px ">
+                <p id="btnlamp" style="padding-left:85px ">
+                    <button type="button" onclick="lampadina(1)">Accendi</button>    
+                    <button type="button" onclick="lampadina(0)">Spegni</button>    
+                </p>
+        </div>
+    </body>
+</html>
