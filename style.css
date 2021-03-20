@@ -34,33 +34,34 @@ h3{
     padding-left: 100px;
 }
 #btncold,#btncolw{
-    padding-left: 60px;
+    margin-left: 60px;
 }
 @media only screen and (max-width: 500px) {
-      #msg{
-    text-align: center;
-    padding-top: 100px;
-    color: green;
-}
-h1{
-    color: green;
-    text-align: center;
-}
-h3{
-    color: green;
-    padding-top: 100px;
-}
-#f_login{
-    padding-left: 50px;
-}
-#visible{
-    padding-left: 50px;
-}
-#lamp,#btnlamp{
-    padding-left: 60px;
-}
-#btncold,#btncolw{
-    padding-left: 0px;
-}
+    #msg{
+        text-align: center;
+        padding-top: 0px;
+        color: green;
+    }
+    h1{
+        color: green;
+        text-align: center;
+    }
 
+    #f_login{
+        padding-left: 50px;
+    }
+    #visible{
+        padding-left: 50px;
+    }
+    #lamp,#btnlamp{
+        padding-left: 60px;
+    }
+    #btncold,#btncolw{
+        padding-left: 0px;
+    }
+    h3{
+        color: green;
+        padding-top: 100px;
+        text-align: left;
+    }
 }

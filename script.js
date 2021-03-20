@@ -7,7 +7,7 @@
 function init() {
     document.querySelector("#blogin").addEventListener("click", welcome);
     msg = "";
-    document.querySelector("#btncol").addEventListener("click",cambiaColore);
+    document.querySelector("#btncol").addEventListener("click", cambiaColore);
 
 }
 
@@ -15,8 +15,7 @@ function welcome() {
     let c = document.querySelector("#cognome");
     let n = document.querySelector("#nome");
     let msg;
-    let nuovadata;
-
+    let tx;
     nuovadata = Date();
     if (c.value == "" || n.value == "") {
         msg = "Errore, campi non compilati."
@@ -24,10 +23,12 @@ function welcome() {
     if (c.value != "Besso" || n.value != "Andrea") {
         msg = "Errore, account non registrato."
     } else {
-        msg = "Benvenuto " + c.value + " " + n.value + "<br>" + "Data e ora accesso: <br>"
-                + nuovadata;
+        msg ="Orario Login: <br>"+ nuovadata;
+        tx="Benvenuto "+c.value+" "+n.value;
     }
     document.querySelector("#msg").innerHTML = msg;
+    document.querySelector("#title").innerHTML=tx;
+
 }
 function lampadina(l) {
     var pic;
@@ -45,11 +46,12 @@ function visualizza(id) {
         if (document.getElementById(id).style.display == 'none') {
             if (c.value == "Besso" && n.value == "Andrea") {
                 document.getElementById(id).style.display = 'block';
+                document.querySelector("#divlog").style.display = "none";
+
             }
         }
     }
 }
-function cambiaColore(color){
-    document.body.style.background= color;
+function cambiaColore(color) {
+    document.body.style.background = color;
 }
-
