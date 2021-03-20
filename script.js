@@ -17,17 +17,20 @@ function welcome() {
     let msg;
     let tx;
     nuovadata = Date();
-    if (c.value == "" || n.value == "") {
-        msg = "Errore, campi non compilati."
-    }
     if (c.value != "Besso" || n.value != "Andrea") {
-        msg = "Errore, account non registrato."
+        if (c.value == "" || n.value == "") {
+            msg = "Campi non compilati."
+            tx = "Errore!"
+        } else {
+            msg = "Account non registrato."
+            tx = "Errore!"
+        }
     } else {
-        msg ="Orario Login: <br>"+ nuovadata;
-        tx="Benvenuto "+c.value+" "+n.value;
+        msg = "Orario Login: <br>" + nuovadata;
+        tx = "Benvenuto " + c.value + " " + n.value;
     }
     document.querySelector("#msg").innerHTML = msg;
-    document.querySelector("#title").innerHTML=tx;
+    document.querySelector("#title").innerHTML = tx;
 
 }
 function lampadina(l) {
