@@ -43,7 +43,7 @@ function visualizza(id) {
     let n = document.querySelector("#nome");
     if (document.getElementById) {
         if (document.getElementById(id).style.display == 'none') {
-            if (c.value == "Besso" || n.value == "Andrea") {
+            if (c.value == "Besso" && n.value == "Andrea") {
                 document.getElementById(id).style.display = 'block';
             }
         } else {
@@ -54,3 +54,4 @@ function visualizza(id) {
 function cambiaColore(color){
     document.body.style.background= color;
 }
+
